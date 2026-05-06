@@ -3,127 +3,444 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>indukuri Varma - AI Security Researcher</title>
+<title>Indukuri Ashok Varma - Malware Data Scientist</title>
+
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: 'Segoe UI', sans-serif; background:#0a0d14; color:#e8eaf2; }
-  .hero { padding:80px 40px; text-align:center; border-bottom:1px solid #1e293b; }
-  h1 { font-size:2.5rem; color:#4f7cff; margin-bottom:12px; }
-  .sub { font-size:1.1rem; color:#94a3b8; margin-bottom:24px; }
-  .badges { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
-  .badge { background:#1e293b; border:1px solid #334155; padding:6px 14px;
-           border-radius:20px; font-size:13px; color:#94a3b8; }
-  .section { padding:60px 40px; max-width:900px; margin:0 auto; }
-  h2 { color:#4f7cff; font-size:1.5rem; margin-bottom:24px;
-       border-bottom:1px solid #1e293b; padding-bottom:8px; }
-  .card { background:#111520; border:1px solid #1e293b; border-radius:10px;
-          padding:24px; margin-bottom:20px; }
-  .card h3 { color:#e8eaf2; margin-bottom:8px; }
-  .card p { color:#94a3b8; font-size:14px; line-height:1.6; }
-  .tag { background:#1e3a5f; color:#4f7cff; padding:3px 8px;
-         border-radius:4px; font-size:12px; margin:3px; display:inline-block; }
-  .links a { color:#4f7cff; text-decoration:none; margin-right:16px; font-size:14px; }
-  .links a:hover { text-decoration:underline; }
-  .contact { text-align:center; padding:60px 40px;
-             border-top:1px solid #1e293b; }
-  .btn { background:#4f7cff; color:white; padding:12px 28px;
-         border-radius:8px; text-decoration:none; font-weight:600;
-         display:inline-block; margin:8px; }
-  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-           gap:16px; margin-bottom:32px; }
-  .stat { background:#111520; border:1px solid #1e293b; border-radius:8px;
-          padding:20px; text-align:center; }
-  .stat-n { font-size:2rem; font-weight:700; color:#4f7cff; }
-  .stat-l { font-size:12px; color:#94a3b8; margin-top:4px; }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0a0d14;
+    color:#e8eaf2;
+    line-height:1.6;
+}
+
+.hero{
+    padding:80px 40px;
+    text-align:center;
+    border-bottom:1px solid #1e293b;
+}
+
+.avatar{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:3px solid #4f7cff;
+    margin:0 auto 24px;
+    display:block;
+    object-fit:cover;
+}
+
+h1{
+    font-size:2.8rem;
+    color:#4f7cff;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:1.2rem;
+    color:#22c55e;
+    font-weight:600;
+    margin-bottom:14px;
+}
+
+.sub{
+    font-size:1rem;
+    color:#94a3b8;
+    margin-bottom:24px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.badges{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.badge{
+    background:#1e293b;
+    border:1px solid #334155;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:13px;
+    color:#94a3b8;
+}
+
+.cert-badge{
+    background:#0d2817;
+    border:1px solid #22c55e;
+    color:#22c55e;
+    font-weight:600;
+}
+
+.section{
+    padding:60px 30px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#4f7cff;
+    margin-bottom:24px;
+    border-bottom:1px solid #1e293b;
+    padding-bottom:10px;
+    font-size:1.7rem;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-bottom:50px;
+}
+
+.stat{
+    background:#111520;
+    border:1px solid #1e293b;
+    border-radius:12px;
+    padding:24px;
+    text-align:center;
+}
+
+.stat-n{
+    font-size:2rem;
+    color:#4f7cff;
+    font-weight:700;
+}
+
+.stat-l{
+    color:#94a3b8;
+    margin-top:8px;
+    font-size:14px;
+}
+
+.card{
+    background:#111520;
+    border:1px solid #1e293b;
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:24px;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:white;
+}
+
+.card p{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+.tag{
+    background:#1e3a5f;
+    color:#60a5fa;
+    padding:5px 10px;
+    border-radius:6px;
+    font-size:12px;
+    display:inline-block;
+    margin:4px;
+}
+
+.links a{
+    color:#4f7cff;
+    text-decoration:none;
+    margin-right:18px;
+    font-size:14px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+.cert-card{
+    background:#0d1b12;
+    border:1px solid #22c55e;
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:30px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.cert-icon{
+    font-size:2.4rem;
+}
+
+.cert-name{
+    color:#22c55e;
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+.cert-org{
+    color:#94a3b8;
+    font-size:14px;
+    margin-top:4px;
+}
+
+.contact{
+    text-align:center;
+    padding:70px 30px;
+    border-top:1px solid #1e293b;
+}
+
+.btn{
+    background:#4f7cff;
+    color:white;
+    padding:12px 26px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    margin:10px;
+    font-weight:600;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+.footer-text{
+    color:#94a3b8;
+    margin-bottom:24px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .hero{
+        padding:60px 20px;
+    }
+
+    .section{
+        padding:50px 20px;
+    }
+}
 </style>
 </head>
+
 <body>
 
 <div class="hero">
-  <h1>Sindukuri Varma</h1>
-  <div class="sub">AI Security Researcher &nbsp;|&nbsp; MLOps Engineer &nbsp;|&nbsp; Open to Remote</div>
-  <div class="badges">
-    <span class="badge">Python</span>
-    <span class="badge">TensorFlow</span>
-    <span class="badge">Cybersecurity</span>
-    <span class="badge">SHAP / XAI</span>
-    <span class="badge">MLOps</span>
-    <span class="badge">Real-time Systems</span>
-  </div>
+
+    <img class="avatar"
+         src="https://avatars.githubusercontent.com/varmasindukuri"
+         alt="Indukuri Ashok Varma"
+         onerror="this.style.display='none'">
+
+    <h1>Indukuri Ashok Varma</h1>
+
+    <div class="title">
+        Malware Data Scientist | AI Security Engineer
+    </div>
+
+    <div class="sub">
+        Building AI-powered malware detection systems, explainable AI
+        cybersecurity solutions, and real-time multi-agent SOC platforms.
+    </div>
+
+    <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">TensorFlow</span>
+        <span class="badge">Malware Analysis</span>
+        <span class="badge">SHAP / XAI</span>
+        <span class="badge">MLOps</span>
+        <span class="badge">SOC Systems</span>
+        <span class="badge cert-badge">ISC2 CC Certified</span>
+    </div>
+
 </div>
 
 <div class="section">
-  <div class="stats">
-    <div class="stat"><div class="stat-n">14</div><div class="stat-l">ML/DL Agents</div></div>
-    <div class="stat"><div class="stat-n">3</div><div class="stat-l">Benchmark Datasets</div></div>
-    <div class="stat"><div class="stat-n">98%</div><div class="stat-l">Best Accuracy</div></div>
-    <div class="stat"><div class="stat-n">5</div><div class="stat-l">Research Notebooks</div></div>
-  </div>
 
-  <h2>Flagship Project</h2>
-  <div class="card">
-    <h3>Protector v2 - Multi-Agent AI Security System</h3>
-    <p>
-      A production-grade real-time security system running 14 ML and DL agents
-      simultaneously on a local endpoint. Detects network intrusions and malware
-      across CIC-IDS 2018, UNSW-NB15, and BETH datasets with SHAP explainability,
-      GradCAM attention maps, attack family classification, and a live Windows
-      system tray that monitors your machine 24/7 without cloud dependency.
-    </p>
-    <br>
-    <div>
-      <span class="tag">SVM</span><span class="tag">Random Forest</span>
-      <span class="tag">LSTM</span><span class="tag">ResNet-1D</span>
-      <span class="tag">GAN</span><span class="tag">HMM</span>
-      <span class="tag">HDBSCAN</span><span class="tag">SHAP</span>
-      <span class="tag">GradCAM</span><span class="tag">NetworkX</span>
-    </div>
-    <br>
-    <div class="links">
-      <a href="https://github.com/varmasindukuri/protector-v2">GitHub Repo</a>
-      <a href="https://kaggle.com/varmasindukuri">Kaggle Notebooks</a>
-    </div>
-  </div>
+    <div class="stats">
 
-  <h2>Skills</h2>
-  <div class="card">
-    <h3>Machine Learning</h3>
-    <p>SVM, Decision Tree, Random Forest, Naive Bayes, ELM,
-       IsolationForest, Gradient Boosting, AdaBoost, Bagging, Stacking Ensemble</p>
-  </div>
-  <div class="card">
-    <h3>Deep Learning</h3>
-    <p>1D CNN, LSTM, BiLSTM, GRU, CNN+LSTM Hybrid, ResNet-1D,
-       GAN, LSTM Autoencoder, Transfer Learning, TensorFlow/Keras</p>
-  </div>
-  <div class="card">
-    <h3>Cybersecurity</h3>
-    <p>Intrusion Detection, Anomaly Detection, Malware Analysis,
-       YARA Rules, PE Header Analysis, Network Flow Analysis,
-       HMM Sequence Modeling, Process Monitoring</p>
-  </div>
-  <div class="card">
-    <h3>Explainable AI</h3>
-    <p>SHAP TreeExplainer, GradCAM, Feature Importance,
-       Beeswarm Plots, Family Classification</p>
-  </div>
-  <div class="card">
-    <h3>MLOps and Tools</h3>
-    <p>Multi-agent fusion, Model Registry, Real-time Inference,
-       psutil, NetworkX, pystray, Groq API, scikit-learn, pandas, numpy</p>
-  </div>
+        <div class="stat">
+            <div class="stat-n">14</div>
+            <div class="stat-l">ML/DL Agents</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-n">3</div>
+            <div class="stat-l">Benchmark Datasets</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-n">98%</div>
+            <div class="stat-l">Best Accuracy</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-n">5+</div>
+            <div class="stat-l">Research Notebooks</div>
+        </div>
+
+    </div>
+
+    <h2>Certifications</h2>
+
+    <div class="cert-card">
+
+        <div class="cert-icon">🛡️</div>
+
+        <div>
+            <div class="cert-name">
+                ISC2 Certified in Cybersecurity (CC)
+            </div>
+
+            <div class="cert-org">
+                ISC2 | Certification ID: 2728174
+            </div>
+
+            <div class="cert-org">
+                Valid: May 2026 – Apr 2029
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Flagship Project</h2>
+
+    <div class="card">
+
+        <h3>Protector v2 - Multi-Agent Malware Detection System</h3>
+
+        <p>
+            A production-grade real-time malware and intrusion detection
+            system running multiple ML and DL agents simultaneously.
+            Detects malware families, anomalous behavior, and network
+            intrusions using CIC-IDS 2018, UNSW-NB15, and BETH datasets.
+            Includes SHAP explainability, GradCAM attention maps,
+            attack-family classification, and real-time Windows monitoring.
+        </p>
+
+        <br>
+
+        <div>
+            <span class="tag">SVM</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">ResNet-1D</span>
+            <span class="tag">GAN</span>
+            <span class="tag">HMM</span>
+            <span class="tag">HDBSCAN</span>
+            <span class="tag">SHAP</span>
+            <span class="tag">GradCAM</span>
+            <span class="tag">YARA</span>
+            <span class="tag">PE Analysis</span>
+            <span class="tag">NetworkX</span>
+        </div>
+
+        <br>
+
+        <div class="links">
+            <a href="https://github.com/varmasindukuri/protector-v2">
+                GitHub Repo
+            </a>
+
+            <a href="https://kaggle.com/varmasindukuri">
+                Kaggle Notebooks
+            </a>
+        </div>
+
+    </div>
+
+    <h2>Skills</h2>
+
+    <div class="card">
+        <h3>Malware Analysis and Detection</h3>
+
+        <p>
+            Static malware analysis, PE header analysis, entropy analysis,
+            YARA rules, syscall sequence modeling, anomaly detection,
+            process monitoring, attack classification, and behavioral
+            malware detection.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Machine Learning</h3>
+
+        <p>
+            SVM, Random Forest, IsolationForest, Decision Trees,
+            Gradient Boosting, AdaBoost, Bagging, Stacking Ensemble,
+            scikit-learn, feature engineering, and ensemble learning.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Deep Learning</h3>
+
+        <p>
+            CNN, LSTM, BiLSTM, GRU, CNN-LSTM Hybrid, ResNet-1D,
+            Autoencoders, GANs, Transfer Learning, TensorFlow,
+            and Keras.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Explainable AI</h3>
+
+        <p>
+            SHAP TreeExplainer, feature importance analysis,
+            GradCAM heatmaps, waterfall plots, beeswarm plots,
+            and interpretable AI security systems.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>MLOps and Deployment</h3>
+
+        <p>
+            Real-time inference pipelines, Windows deployment,
+            multi-agent fusion systems, endpoint monitoring,
+            automated alerting, and AI system deployment.
+        </p>
+    </div>
+
 </div>
 
 <div class="contact">
-  <h2>Open to Remote Work</h2>
-  <p style="color:#94a3b8;margin-bottom:24px">
-    Available for full-time remote roles and freelance projects in<br>
-    AI Security, MLOps, Threat Detection, and Data Science
-  </p>
-  <a class="btn" href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
-  <a class="btn" href="https://github.com/varmasindukuri">GitHub</a>
-  <a class="btn" href="https://kaggle.com/varmasindukuri">Kaggle</a>
-  <a class="btn" href="mailto:your@gmail.com">Email Me</a>
+
+    <h2>Open to Remote Opportunities</h2>
+
+    <p class="footer-text">
+        Available for remote roles, internships, freelance projects,
+        and AI cybersecurity collaborations.
+    </p>
+
+    <a class="btn"
+       href="https://github.com/varmasindukuri">
+       GitHub
+    </a>
+
+    <a class="btn"
+       href="https://kaggle.com/varmasindukuri">
+       Kaggle
+    </a>
+
+    <a class="btn"
+       href="https://linkedin.com/in/YOUR_LINKEDIN">
+       LinkedIn
+    </a>
+
+    <a class="btn"
+       href="mailto:YOURMAIL@gmail.com">
+       Email
+    </a>
+
 </div>
 
 </body>
