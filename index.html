@@ -1,96 +1,348 @@
-<!-- HTML / Markdown structure for varmasindukuri.github.io -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indukuri Ashok Varma | Security Data Scientist</title>
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --accent-color: #38bdf8;
+      --accent-hover: #0284c7;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #1f2937;
+    }
 
-<header>
-  <h1>INDUKURI ASHOK VARMA</h1>
-  <p><strong>Security Data Scientist (Self-Taught) | Malware Detection | AI Desktop Apps | MLOps</strong></p>
-  <p>Hyderabad, India | varmasindukuri@gmail.com | +91 9100699377</p>
-  <p>
-    <a href="https://github.com/varmasindukuri">GitHub</a> | 
-    <a href="https://varmasindukuri.github.io">Portfolio</a> | 
-    <a href="https://linkedin.com/in/ashokvarma-0b7842408">LinkedIn</a>
-  </p>
-  <p><em>Open to Remote | ISC2 CC | Neo4j Graph DS | Databricks Fundamentals | Oracle Agentic AI</em></p>
-</header>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    B.Tech EEE graduate (2009) working as a DC drives and VFD service engineer. Previously a Security Engineer at Sify Technologies performing incident analysis and investigation using SIEM, EDR, and ISMS tools. Self-taught ML, deep learning, and software development entirely outside of work. Built three independent production-grade projects: Protector (14-agent real-time IDS), and Agentic Analytics Desktop (PySide6 AI-powered desktop analytics application). Capable of taking a project from raw idea to working deployed application without guidance. Actively seeking a remote transition into security data science, ML engineering, or AI application development.
-  </p>
-</section>
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>
-      <strong>Oracle Agentic AI Certified Foundations Associate</strong>[cite: 1] <br>
-      <em>Issued Sep 27, 2026 · Expires Sep 27, 2028 · Credential ID: 331953788AA126OFA</em>[cite: 1]
-    </li>
-    <li>
-      <strong>ISC2 Certified in Cybersecurity (CC)</strong>[cite: 2] <br>
-      <em>Issued Apr 2026 · Expires Apr 2029 · Credential ID: 2728174</em>[cite: 2]
-    </li>
-    <li>
-      <strong>Neo4j Graph Data Science Certification</strong>[cite: 2] <br>
-      <em>Issued Dec 2025 · Credential ID: 65cf74a7-f2cc-4fb2-b678-ae9c0ba028b7</em>[cite: 2]
-    </li>
-    <li>
-      <strong>Academy Accreditation - Databricks Fundamentals</strong>[cite: 2] <br>
-      <em>Issued Feb 2025 · Credential ID: 134253425</em>[cite: 2]
-    </li>
-  </ul>
-</section>
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>ML:</strong> SVM, Random Forest, Gradient Boosting, AdaBoost, Bagging, ELM, IsolationForest, GaussianNB, XGBoost[cite: 2]</li>
-    <li><strong>Deep Learning:</strong> CNN, LSTM, BILSTM, GRU, ResNet-1D, GAN, LSTM Autoencoder, hmmlearn, hdbscan[cite: 2]</li>
-    <li><strong>Explainability:</strong> SHAP TreeExplainer, GradCAM (1D CNN)[cite: 2]</li>
-    <li><strong>Desktop Apps:</strong> PySide6 (Qt6), PyInstaller, Tkinter, Windows .exe packaging, GUI design[cite: 2]</li>
-    <li><strong>AI Integration:</strong> Groq LLM API, python-dotenv, agent orchestration, natural language data analysis[cite: 2]</li>
-    <li><strong>Data:</strong> pandas, numpy, openpyxl, BeautifulSoup4, requests, CSV/Excel ingestion, web scraping[cite: 2]</li>
-    <li><strong>Malware:</strong> PE analysis, Entropy analysis, Packer detection, Shellcode scanning, C2 beacon detection, APK classification[cite: 2]</li>
-    <li><strong>MLOps:</strong> Multi-agent fusion, Model registry, Real-time inference, Stacking ensemble, Auto-update pipeline[cite: 2]</li>
-    <li><strong>Graph / DB:</strong> Neo4j Graph Data Science, Knowledge graphs, Databricks[cite: 2]</li>
-    <li><strong>Security:</strong> SIEM, EDR, ISMS, Incident analysis, Threat investigation, Network flow concepts[cite: 2]</li>
-    <li><strong>Tools:</strong> Python, Jupyter, Git, matplotlib, PyInstaller[cite: 2]</li>
-  </ul>
-</section>
+    /* Header Profile Section */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
 
-<section id="projects">
-  <h2>Featured Projects</h2>
-  
-  <h3>1. Protector – Multi-Agent AI Security System</h3>
-  <p><strong>GitHub:</strong> <a href="https://github.com/varmasindukuri/protector-v2">github.com/varmasindukuri/protector-v2</a></p>
-  <ul>
-    <li>Built a 14-agent fused architecture achieving ~98% accuracy on CIC-IDS 2018 dataset.[cite: 2]</li>
-    <li>Integrated SHAP TreeExplainer and GradCAM (1D CNN) directly into a live Windows system tray app.[cite: 2]</li>
-    <li>Includes static PE header auditing, entropy analysis, packer detection, shellcode scanning, and live C2 beacon monitoring.[cite: 2]</li>
-  </ul>
+    @media (min-width: 640px) {
+      header {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+      }
+    }
 
-  <h3>2. Agentic Analytics Desktop — AI-Powered Desktop App</h3>
-  <p><strong>GitHub:</strong> <a href="https://github.com/varmasindukuri/agentic-analytics-desktop">github.com/varmasindukuri/agentic-analytics-desktop</a></p>
-  <ul>
-    <li>Full Python desktop application built with PySide6 and compiled to standalone Windows .exe with PyInstaller.[cite: 2]</li>
-    <li>Features autonomous multi-step dataset analysis, web scraping capabilities, Groq LLM natural language Q&A, and interactive visualizations.[cite: 2]</li>
-  </ul>
-</section>
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+      flex-shrink: 0;
+      margin-bottom: 1.5rem;
+    }
 
-<section id="experience">
-  <h2>Work Experience</h2>
-  
-  <h3>Service Engineer | Confiant Engineering Pvt Ltd</h3>
-  <p><em>Hyderabad, India | Feb 2019 – Present</em></p>
-  <ul>
-    <li>Install, commission, and service DC motor drives and Variable Frequency Drives (VFDs) across industrial clients.[cite: 2]</li>
-    <li>Perform field diagnostics, fault tracing, parameter configuration, drive tuning, and motor performance testing.[cite: 2]</li>
-  </ul>
+    @media (min-width: 640px) {
+      .profile-img {
+        margin-bottom: 0;
+      }
+    }
 
-  <h3>Security Engineer | Sify Technologies Limited</h3>
-  <p><em>Hyderabad, India | Sep 2016 – Jan 2019</em></p>
-  <ul>
-    <li>Performed security incident analysis, detection, and investigation using SIEM, EDR, and ISMS tools.[cite: 2]</li>
-    <li>Monitored security events and alerts, triaged incidents, and conducted threat root cause analysis across endpoint and network telemetry.[cite: 2]</li>
-  </ul>
-</section>
+    .profile-info h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-info .title {
+      font-size: 1.05rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .profile-info .contact {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (min-width: 640px) {
+      .links {
+        justify-content: flex-start;
+      }
+    }
+
+    .links a {
+      color: var(--text-main);
+      background: #1f2937;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .links a:hover {
+      background: var(--accent-color);
+      color: #000000;
+      border-color: var(--accent-color);
+    }
+
+    .badges {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* General Sections */
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      color: #ffffff;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Lists & Items */
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    li strong {
+      color: #ffffff;
+    }
+
+    .skill-category {
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .skill-category strong {
+      color: var(--accent-color);
+    }
+
+    .item-card {
+      margin-bottom: 1.5rem;
+    }
+
+    .item-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .item-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .item-card ul {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+    }
+
+    .item-card li {
+      margin-bottom: 0.4rem;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header with Photograph -->
+    <header>
+      <img src="ashok.JPG" alt="Indukuri Ashok Varma" class="profile-img">
+      <div class="profile-info">
+        <h1>INDUKURI ASHOK VARMA</h1>
+        <div class="title">Security Data Scientist (Self-Taught) | Malware Detection | AI Desktop Apps | MLOps</div>
+        <div class="contact">Hyderabad, India | varmasindukuri@gmail.com | +91 9100699377</div>
+        <div class="links">
+          <a href="https://github.com/varmasindukuri" target="_blank">GitHub</a>
+          <a href="https://varmasindukuri.github.io" target="_blank">Portfolio</a>
+          <a href="https://linkedin.com/in/ashokvarma-0b7842408" target="_blank">LinkedIn</a>
+        </div>
+        <div class="badges">
+          Open to Remote | ISC2 CC | Neo4j Graph DS | Databricks Fundamentals | Oracle Agentic AI
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="color: var(--text-muted);">
+        B.Tech EEE graduate (2009) working as a DC drives and VFD service engineer. Previously a Security Engineer at Sify Technologies performing incident analysis and investigation using SIEM, EDR, and ISMS tools. Self-taught ML, deep learning, and software development entirely outside of work. Built three independent production-grade projects: Protector (14-agent real-time IDS), and Agentic Analytics Desktop (PySide6 AI-powered desktop analytics application). Capable of taking a project from raw idea to working deployed application without guidance. Actively seeking a remote transition into security data science, ML engineering, or AI application development.
+      </p>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="item-card">
+        <div class="item-title">Oracle Agentic AI Certified Foundations Associate</div>
+        <div class="item-sub">Issued Sep 27, 2026 · Expires Sep 27, 2028 · Credential ID: 331953788AA126OFA</div>
+      </div>
+      <div class="item-card">
+        <div class="item-title">ISC2 Certified in Cybersecurity (CC)</div>
+        <div class="item-sub">Issued Apr 2026 · Expires Apr 2029 · Credential ID: 2728174</div>
+      </div>
+      <div class="item-card">
+        <div class="item-title">Neo4j Graph Data Science Certification</div>
+        <div class="item-sub">Issued Dec 2025 · Credential ID: 65cf74a7-f2cc-4fb2-b678-ae9c0ba028b7</div>
+      </div>
+      <div class="item-card">
+        <div class="item-title">Academy Accreditation - Databricks Fundamentals</div>
+        <div class="item-sub">Issued Feb 2025 · Credential ID: 134253425</div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <span class="skill-category"><strong>ML:</strong> SVM, Random Forest, Gradient Boosting, AdaBoost, Bagging, ELM, IsolationForest, GaussianNB, XGBoost</span>
+      <span class="skill-category"><strong>Deep Learning:</strong> CNN, LSTM, BILSTM, GRU, ResNet-1D, GAN, LSTM Autoencoder, hmmlearn, hdbscan</span>
+      <span class="skill-category"><strong>Explainability:</strong> SHAP TreeExplainer, GradCAM (1D CNN)</span>
+      <span class="skill-category"><strong>Desktop Apps:</strong> PySide6 (Qt6), PyInstaller, Tkinter, Windows .exe packaging, GUI design</span>
+      <span class="skill-category"><strong>AI Integration:</strong> Groq LLM API, python-dotenv, agent orchestration, natural language data analysis</span>
+      <span class="skill-category"><strong>Data:</strong> pandas, numpy, openpyxl, BeautifulSoup4, requests, CSV/Excel ingestion, web scraping</span>
+      <span class="skill-category"><strong>Malware:</strong> PE analysis, Entropy analysis, Packer detection, Shellcode scanning, C2 beacon detection, APK classification</span>
+      <span class="skill-category"><strong>MLOps:</strong> Multi-agent fusion, Model registry, Real-time inference, Stacking ensemble, Auto-update pipeline</span>
+      <span class="skill-category"><strong>Graph / DB:</strong> Neo4j Graph Data Science, Knowledge graphs, Databricks</span>
+      <span class="skill-category"><strong>Security:</strong> SIEM, EDR, ISMS, Incident analysis, Threat investigation, Network flow concepts</span>
+      <span class="skill-category"><strong>Tools:</strong> Python, Jupyter, Git, matplotlib, PyInstaller</span>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      
+      <div class="item-card">
+        <div class="item-title">Protector – Multi-Agent AI Security System</div>
+        <div class="item-sub"><a href="https://github.com/varmasindukuri/protector-v2" target="_blank">github.com/varmasindukuri/protector-v2</a></div>
+        <ul>
+          <li>Built a 14-agent fused architecture achieving ~98% accuracy on CIC-IDS 2018 dataset.</li>
+          <li>Integrated SHAP TreeExplainer and GradCAM (1D CNN) directly into a live Windows system tray app.</li>
+          <li>Includes static PE header auditing, entropy analysis, packer detection, shellcode scanning, and live C2 beacon monitoring.</li>
+        </ul>
+      </div>
+
+      <div class="item-card">
+        <div class="item-title">Agentic Analytics Desktop — AI-Powered Desktop App</div>
+        <div class="item-sub"><a href="https://github.com/varmasindukuri/agentic-analytics-desktop" target="_blank">github.com/varmasindukuri/agentic-analytics-desktop</a></div>
+        <ul>
+          <li>Full Python desktop application built with PySide6 and compiled to standalone Windows .exe with PyInstaller.</li>
+          <li>Features autonomous multi-step dataset analysis, web scraping capabilities, Groq LLM natural language Q&A, and interactive visualizations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+      
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">Service Engineer | Confiant Engineering Pvt Ltd</span>
+          <span class="item-sub">Feb 2019 – Present</span>
+        </div>
+        <div class="item-sub">Hyderabad, India</div>
+        <ul>
+          <li>Install, commission, and service DC motor drives and Variable Frequency Drives (VFDs) across industrial clients.</li>
+          <li>Perform field diagnostics, fault tracing, parameter configuration, drive tuning, and motor performance testing.</li>
+        </ul>
+      </div>
+
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">Security Engineer | Sify Technologies Limited</span>
+          <span class="item-sub">Sep 2016 – Jan 2019</span>
+        </div>
+        <div class="item-sub">Hyderabad, India</div>
+        <ul>
+          <li>Performed security incident analysis, detection, and investigation using SIEM, EDR, and ISMS tools.</li>
+          <li>Monitored security events and alerts, triaged incidents, and conducted threat root cause analysis across endpoint and network telemetry.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
